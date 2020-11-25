@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".component.main.MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/main_host_fragment"
+        android:name="mock.brains.mvvmappskeleton.core.architecture.fragment.MainNavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_constraint"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_main" />
+
+    <include
+        android:id="@+id/main_navigation_view"
+        layout="@layout/layout_drawer"
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">MVVM App Skeleton</string>
+
+    <!-- Common -->
+    <string name="common_ok">OK</string>
+    <string name="common_close">Close</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_yes">Yes</string>
+    <string name="common_no">No</string>
+
+    <string name="common_signIn">Sign In</string>
+    <string name="common_signUp">Sign Up</string>
+    <string name="common_emailHint">E-mail</string>
+    <string name="common_passwordHint">Password</string>
+    <string name="common_confirmPasswordHint">Confirm password</string>
+
+    <!-- Errors -->
+    <string name="error_networkErrorMessage">Network error</string>
+    <string name="error_errorGettingData">Error getting data</string>
+    <string name="error_errorFilledData">Error filled data</string>
+    <string name="error_serverNotResponding">Server not responding</string>
+    <string name="error_something_went_wrong">Something went wrong</string>
+
+    <string name="error_passwords_does_not_match">Confirm password does not match the password</string>
+    <string name="error_email_wrong_format">Incorrect email address format</string>
+    <string name="error_email_cant_be_empty">Email address can not be empty</string>
+    <string name="error_password_cant_be_empty">Password can not be empty</string>
+    <string name="error_confirm_password_cant_be_empty">Confirm password can not be empty</string>
+
+    <!-- Welcome -->
+    <string name="welcome_screenTitle">Welcome</string>
+    <string name="welcome_signInToYourAccount">Sign in to your account</string>
+    <string name="welcome_dontHaveAnAccount">Don`t have an account?</string>
+
+    <!-- Sign Up -->
+    <string name="signUp_createAnAccount">Create an account</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_menuLogOut">Log out</string>
+
+    <!-- Logout dialog -->
+    <string name="logoutDialog_logOut">Log Out</string>
+    <string name="logoutDialog_description">Do you want to log out from the account %s?</string>
+
+</resources>

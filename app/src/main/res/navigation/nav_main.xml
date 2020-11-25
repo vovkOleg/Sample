@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/splashFragment"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="mock.brains.mvvmappskeleton.component.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_splashFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+
+        <action
+            android:id="@+id/action_splashFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="mock.brains.mvvmappskeleton.component.welcome.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_sighUpFragment"
+            app:destination="@id/sighUpFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/welcomeFragment" />
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sighUpFragment"
+        android:name="mock.brains.mvvmappskeleton.component.signUp.SignUpFragment"
+        android:label="fragment_signUp"
+        tools:layout="@layout/fragment_sign_up">
+
+        <argument
+            android:name="email"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_sighUpFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/dashboardFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="mock.brains.mvvmappskeleton.component.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/action_dashboardFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+</navigation>

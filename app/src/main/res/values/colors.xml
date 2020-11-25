@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palette -->
+    <color name="transparent">#00000000</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="black_50">#80000000</color>
+
+    <color name="gray">#EEEEEE</color>
+    <color name="gray1">#AFAFAF</color>
+    <color name="gray_dark">#616161</color>
+    <color name="gray_dark50">#80616161</color>
+
+    <color name="red">#FF0000</color>
+
+    <!-- Colors -->
+    <color name="colorPrimary">@color/gray</color>
+    <color name="colorPrimaryDark">@color/gray_dark</color>
+    <color name="colorAccent">@color/black</color>
+    <color name="colorControlHighlight">@color/gray1</color>
+
+    <color name="main_background">@color/gray</color>
+
+    <color name="actionTextGray_disabled">@color/gray_dark50</color>
+    <color name="actionTextGray_default">@color/gray_dark</color>
+    <color name="actionTextGray_pressed">@color/gray1</color>
+
+    <color name="widgetLoaderOverlay_dimBackground">@color/black_50</color>
+
+</resources>

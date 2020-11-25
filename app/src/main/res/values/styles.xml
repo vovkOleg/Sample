@@ -1,0 +1,74 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorControlHighlight</item>
+
+        <item name="android:windowBackground">@drawable/background_startup</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <!-- Theme for android layout preview with main background color -->
+    <style name="PreviewTheme" parent="AppTheme" tools:ignore="UnusedResources">
+        <item name="android:windowBackground">@color/main_background</item>
+    </style>
+
+    <style name="Progress" parent="Widget.AppCompat.ProgressBar" />
+
+    <style name="AlertDialog" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/gray_dark</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/gray_dark</item>
+    </style>
+
+    <style name="FadeDialogAnimation" parent="AlertDialog">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="GrowDialogAnimation" parent="AlertDialog">
+        <item name="android:windowEnterAnimation">@anim/grow_in</item>
+        <item name="android:windowExitAnimation">@anim/grow_out</item>
+    </style>
+
+    <style name="MainText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="BlockTitle" parent="MainText" />
+
+    <style name="DescriptionText" parent="MainText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="EditText">
+        <item name="android:layout_height">42dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textColorHint">@color/gray_dark50</item>
+        <item name="android:textColor">@color/gray_dark</item>
+    </style>
+
+    <style name="SolidButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_height">54dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="backgroundTint">@color/gray_dark</item>
+    </style>
+
+</resources>

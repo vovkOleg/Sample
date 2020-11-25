@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:focusableInTouchMode="true"
+    tools:context=".component.main.MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/welcome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="@dimen/match_constraint"
+        android:layout_height="@dimen/match_constraint"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/white"
+        android:clipToPadding="false"
+        android:paddingStart="24dp"
+        android:paddingTop="36dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_dontHaveAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_toolbar"
+        app:layout_constraintVertical_bias="0.3">
+
+        <TextView
+            android:id="@+id/welcome_blockTitle"
+            style="@style/BlockTitle"
+            android:text="@string/welcome_signInToYourAccount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/welcome_emailField"
+            style="@style/EditText"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_marginTop="32dp"
+            android:autofillHints="email"
+            android:hint="@string/common_emailHint"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_blockTitle" />
+
+        <EditText
+            android:id="@+id/welcome_passwordField"
+            style="@style/EditText"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_marginTop="16dp"
+            android:autofillHints="password"
+            android:hint="@string/common_passwordHint"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_emailField" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/welcome_signInButton"
+            style="@style/SolidButton"
+            android:layout_width="@dimen/match_constraint"
+            android:layout_marginTop="32dp"
+            android:text="@string/common_signIn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcome_passwordField" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/welcome_dontHaveAccount"
+        style="@style/DescriptionText"
+        android:layout_marginBottom="16dp"
+        android:text="@string/welcome_dontHaveAnAccount"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_signUpButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/welcome_signUpButton"
+        style="@style/SolidButton"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/common_signUp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
